@@ -99,7 +99,7 @@ candidate_database = {
 people = ["Lane", "Ash", "Jo", "Kendall"]
 
 
-def get_people():
+def get_people(w3):
     """Display the database of Fintech Finders candidate information."""
     db_list = list(candidate_database.values())
 
@@ -135,11 +135,12 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 # YOUR CODE HERE
 
 account = generate_account()
-ether = get_balance(account.address)
 
-st.sidebar.markdown("## Your Balance of Ether")
-st.sidebar.markdown(ether)
-st.sidebar.markdown("---------")
+# ether = get_balance(account.address)
+
+# st.sidebar.markdown("## Your Balance of Ether")
+# st.sidebar.markdown(ether)
+# st.sidebar.markdown("---------")
 
 ##########################################
 
@@ -299,7 +300,7 @@ if st.sidebar.button("Send Transaction"):
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
-get_people()
+get_people(w3)
 
 ################################################################################
 # Step 3: Inspect the Transaction

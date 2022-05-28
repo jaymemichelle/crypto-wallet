@@ -7,8 +7,8 @@
 # Imports
 import os
 import requests
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 from bip44 import Wallet
 from web3 import Account
 from web3 import middleware
@@ -20,10 +20,10 @@ from web3.gas_strategies.time_based import medium_gas_price_strategy
 def generate_account():
     """Create a digital wallet and Ethereum account from a mnemonic seed phrase."""
     # Fetch mnemonic from environment variable.
-    mnemonic = os.getenv("MNEMONIC")
+    # mnemonic = os.getenv("MNEMONIC")
 
     # Create Wallet Object
-    wallet = Wallet(mnemonic)
+    wallet = Wallet("road enjoy hello famous person raven train luxury spell ill possible common")
 
     # Derive Ethereum Private Key
     private, public = wallet.derive_account("eth")
