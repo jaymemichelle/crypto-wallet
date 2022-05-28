@@ -8,6 +8,6 @@ UofT Fintech Week 19
 - Review the transaction hash code associated with the validated blockchain transaction.
 
 ### Steps
-Step 1: Import Ethereum Transaction Functions into the Fintech Finder Application
-Step 2: Sign and Execute a Payment Transaction
-Step 3: Inspect the Transaction
+- Step 1: Import Ethereum Transaction Functions into the Fintech Finder Application
+- Step 2: Sign and Execute a Payment Transaction
+- Step 3: Inspect the Transaction
